@@ -1,0 +1,16 @@
+{
+  "name": "ipwnedyou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pwned": "npm i && node index.js"
+  },
+  "author": "Alejandro Santander <palebluedot@gmail.com> (http://ajsantander.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "ctrl-c": "^2.2.7",
+    "figlet": "^1.2.0"
+  }
+}
