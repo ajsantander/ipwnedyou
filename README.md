@@ -1,1 +1,1 @@
-```npm run pwned``` and see what happens
+```npm i -g ipwnedyou && pwned``` and see what happens

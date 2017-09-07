@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const figlet = require('figlet');
 const colors = require('colors');
 const ctrl_c = require('ctrl-c');
