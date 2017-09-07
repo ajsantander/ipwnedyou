@@ -32,7 +32,7 @@ const words = [
 ];
 var i = 0;
 
-setInterval(() => {
+setInterval(function() {
   const font = fonts[ Math.floor(fonts.length * Math.random()) ];
   const color = cols[ Math.floor(cols.length * Math.random()) ];
   const word = words[i];
@@ -44,7 +44,7 @@ setInterval(() => {
         colors[color](
           figlet.textSync(
             word,
-            { font }
+            { font: font }
           )
         )
       )
