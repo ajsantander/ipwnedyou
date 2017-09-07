@@ -30,7 +30,7 @@ const words = [
   'been',
   'pwned!!!',
 ];
-let i = 0;
+var i = 0;
 
 setInterval(() => {
   const font = fonts[ Math.floor(fonts.length * Math.random()) ];
