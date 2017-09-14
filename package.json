@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pwned": "npm i && node index.js"
+    "pwned": "npm i && nodejs index.js"
   },
   "bin": {
     "pwned": "index.js"
