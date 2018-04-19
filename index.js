@@ -14,7 +14,7 @@ const fonts = [
   'Delta Corps Priest 1',
   'Electronic',
   'Elite',
-  'graffiti',
+  'Graffiti',
 ];
 const cols = [
   'cyan',
