@@ -4,9 +4,9 @@ const figlet = require('figlet');
 const colors = require('colors');
 const ctrl_c = require('ctrl-c');
 
-process.stdin.setRawMode(true);
-process.stdin.resume();
-ctrl_c(true);
+// process.stdin.setRawMode(true);
+// process.stdin.resume();
+// ctrl_c(true);
 
 const target = process.argv[2];
 
