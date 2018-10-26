@@ -1,1 +1,1 @@
-`wget -O - zpl.in/alepwn ! sh -s -- Ale`
+`wget -O - zpl.in/alepwn ! sh -s Ale`
