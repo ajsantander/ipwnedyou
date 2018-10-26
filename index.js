@@ -8,6 +8,8 @@ process.stdin.setRawMode(true);
 process.stdin.resume();
 ctrl_c(true);
 
+const target = process.argv[2];
+
 const fonts = [
   'Bloody',
   'ANSI Shadow',
@@ -28,7 +30,41 @@ const words = [
   'you',
   'have',
   'been',
-  'pwned!!!',
+  `pwned${target ? "" : "!!!"}`,
+  `${target ? target + '!!!' : ""}`,
+  '',
+  'I',
+  'know',
+  'where',
+  'you',
+  `live`,
+  `${target ? target + '.' : ""}`,
+  '',
+  'I',
+  'have',
+  'all',
+  'your',
+  `keys${target ? "" : "."}`,
+  `${target ? target + '!!!!!!!' : ""}`,
+  '',
+  'I',
+  'own',
+  'you',
+  `${target ? target + '.' : ""}`,
+  '',
+  'mua',
+  'ha',
+  'ha',
+  'ha',
+  'haaaa',
+  'MUAAAhaHAAAAAAa',
+  'haaAaAaaaa',
+  'HAAAAAAAAAAAA!!!!',
+  '',
+  '',
+  '',
+  '',
+  '',
 ];
 var i = 0;
 
@@ -50,4 +86,4 @@ setInterval(function() {
       )
     )
   );
-}, 250);
+}, 500);
