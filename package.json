@@ -1,11 +1,8 @@
 {
-  "name": "ipwnedyou",
-  "version": "0.0.6",
+  "name": "pwned",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "pwned": "npm i && node index.js"
-  },
   "bin": {
     "pwned": "index.js"
   },

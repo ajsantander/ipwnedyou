@@ -1,10 +1,9 @@
 #!/bin/bash
 
 set -x
-mkdir you_have_been_pwned
-cd  you_have_been_pwned
-npm init --yes
-npm install ipwnedyou
-chmod a+x ./node_modules/ipwnedyou/index.js
-node ./node_modules/ipwnedyou/index.js
+#cp -r pwned you_have_been_pwned
+git clone git@github.com:ajsantander/pwned.git you_have_been_pwned
+cd you_have_been_pwned
+npm i
+node index $1
 set +x
