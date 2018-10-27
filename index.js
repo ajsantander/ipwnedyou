@@ -1,9 +1,7 @@
-#! /usr/bin/env node
-
 const figlet = require('figlet');
 const colors = require('colors');
 
-const target = process.argv[2];
+const msg = process.argv[2].split(' ');
 
 const fonts = [
   'Bloody',
@@ -12,6 +10,8 @@ const fonts = [
   'Electronic',
   'Elite',
   'Graffiti',
+  'Doom',
+  'Isometric1'
 ];
 const cols = [
   'cyan',
@@ -21,57 +21,14 @@ const cols = [
   'blue',
   'red',
 ];
-const words = [
+let words = msg || [
   'You',
   'have',
   'been',
-  `pwned${target ? "" : "!!!"}`,
-  `${target ? target + '!!!' : ""}`,
-  '',
-  'I',
-  'know',
-  'where',
-  'you',
-  'live',
-  `${target ? target : ""}`,
-  '',
-  'I',
-  'have',
-  'all',
-  'your',
-  'keys',
-  `${target ? target : ""}`,
-  '',
-  "I'll",
-  'be',
-  'watching',
-  'you',
-  `${target ? target : ""}`,
-  '',
-  'I',
-  'own',
-  'you',
-  `${target ? target : ""}`,
-  '',
-  'mua',
-  'ha',
-  'ha',
-  'ha',
-  'haaaa...',
-  '',
-  '',
-  'MUA',
-  'HA',
-  'HA',
-  'HA',
-  'HAAAA!!!!',
-  '',
-  '',
-  '',
-  '',
+  'pwned'
 ];
-var i = 0;
 
+var i = 0;
 setInterval(function() {
   const font = fonts[ Math.floor(fonts.length * Math.random()) ];
   const color = cols[ Math.floor(cols.length * Math.random()) ];
@@ -79,7 +36,7 @@ setInterval(function() {
   i++;
   if(i >= words.length) i = 0;
   console.log(
-    colors.inverse(
+    // colors.inverse(
       colors.bold(
         colors[color](
           figlet.textSync(
@@ -88,6 +45,6 @@ setInterval(function() {
           )
         )
       )
-    )
+    // )
   );
-}, 500);
+}, 800);
