@@ -6,7 +6,7 @@ if(process.argv.length === 3) {
   msg = process.argv[2].split(' ');
 }
 else if(process.argv.length > 2) {
-  msg = process.argv.slice(2, process.argv.length - 1);
+  msg = process.argv.slice(2, process.argv.length);
 }
   
 const fonts = [
