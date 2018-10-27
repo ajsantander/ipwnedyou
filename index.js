@@ -1,8 +1,14 @@
 const figlet = require('figlet');
 const colors = require('colors');
 
-const msg = process.argv[2].split(' ');
-
+let msg;
+if(process.argv.length === 3) {
+  msg = process.argv[2].split(' ');
+}
+else if(process.argv.length > 2) {
+  msg = process.argv.slice(2, process.argv.length - 1);
+}
+  
 const fonts = [
   'Bloody',
   'ANSI Shadow',
@@ -21,7 +27,7 @@ const cols = [
   'blue',
   'red',
 ];
-let words = msg || [
+let words = msg ? msg : [
   'You',
   'have',
   'been',
